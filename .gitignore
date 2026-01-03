@@ -1,0 +1,25 @@
+# Data
+data/raw/
+data/raw/PlantVillage/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models
+results/metrics/*.h5
+
+# Bulk Grad-CAM outputs
+results/gradcam/
+results/gradcam_resnet/
+
+# Script-generated metadata
+results/metrics/test_samples.json
+
