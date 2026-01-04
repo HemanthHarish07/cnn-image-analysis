@@ -91,30 +91,3 @@ cnn-image-analysis/
 │   ├── plots/
 │   └── gradcam_resnet/
 └── README.md
-
-## 🔁 Reproducibility & Execution Flow
-
-This project follows a clear separation between experimentation and execution:
-
-- **Notebooks** were used for exploration, prototyping, and analysis.
-- **Scripts** were used for stable execution to avoid notebook GPU instability.
-- **Results** (models, metrics, Grad-CAM outputs) are frozen and stored under `results/`.
-
-### Execution Order
-
-1. Explore dataset and distributions  
-   → `notebooks/01_data_exploration.ipynb`
-
-2. Train baseline CNN  
-   → `notebooks/02_baseline_cnn.ipynb`
-
-3. Analyze errors and explainability (documentation)  
-   → `notebooks/03_error_analysis_and_gradcam.ipynb`
-
-4. Train ResNet50 via transfer learning  
-   → `notebooks/04_transfer_learning_resnet50.ipynb`
-
-5. Generate Grad-CAM visualizations (stable execution)  
-   ```bash
-   python scripts/run_gradcam.py
-   python scripts/run_gradcam_resnet.py
