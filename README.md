@@ -60,8 +60,6 @@ Grad-CAM was applied to both correct and incorrect predictions to understand mod
 
 ---
 
----
-
 ## 🔁 Reproducibility & Execution Flow
 
 This project follows a clear separation between **experimentation**, **execution**, and **analysis** to ensure stability and reproducibility.
