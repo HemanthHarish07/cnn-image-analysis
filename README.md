@@ -60,6 +60,36 @@ Grad-CAM was applied to both correct and incorrect predictions to understand mod
 
 ---
 
+---
+
+## 🔁 Reproducibility & Execution Flow
+
+This project follows a clear separation between **experimentation**, **execution**, and **analysis** to ensure stability and reproducibility.
+
+- **Notebooks** were used for exploration, prototyping, and result interpretation.
+- **Standalone scripts** were used for Grad-CAM generation to avoid notebook GPU instability.
+- **Final artifacts** (trained models, metrics, and visualizations) are stored under `results/` and treated as frozen outputs.
+
+### Execution Order
+
+1. Dataset exploration and visualization  
+   → `notebooks/01_data_exploration.ipynb`
+
+2. Baseline CNN training and evaluation  
+   → `notebooks/02_baseline_cnn.ipynb`
+
+3. Error analysis and explainability documentation  
+   → `notebooks/03_error_analysis_and_gradcam.ipynb`
+
+4. Transfer learning with ResNet50  
+   → `notebooks/04_transfer_learning_resnet50.ipynb`
+
+5. Stable Grad-CAM generation (outside notebooks)  
+   ```bash
+   python scripts/run_gradcam.py
+   python scripts/run_gradcam_resnet.py
+
+
 ## ⚙️ Tech Stack
 
 * **Deep Learning:** TensorFlow / Keras
