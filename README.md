@@ -44,7 +44,8 @@ A ResNet50 backbone pretrained on ImageNet with a custom classification head.
 
 ## 🔍 Explainability with Grad-CAM
 
-High accuracy alone is not sufficient for trustable ML systems. To address this, **Grad-CAM (Gradient-weighted Class Activation Mapping)** was used to visualize where models focus their attention.Grad-CAM visualizations were generated using standalone scripts to avoid notebook GPU instability.
+High accuracy alone is not sufficient for trustable ML systems. To address this, **Grad-CAM (Gradient-weighted Class Activation Mapping)** was used to visualize where models focus their attention.
+Grad-CAM visualizations were generated using standalone scripts to avoid notebook GPU instability.
 
 
 ### 🧪 Error Analysis Workflow
@@ -86,7 +87,8 @@ This project follows a clear separation between **experimentation**, **execution
    ```bash
    python scripts/run_gradcam.py
    python scripts/run_gradcam_resnet.py
-
+   
+---
 
 ## ⚙️ Tech Stack
 
