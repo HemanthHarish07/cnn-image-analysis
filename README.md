@@ -97,6 +97,7 @@ For reproducibility, training workflows are also exposed as standalone scripts:
 ```bash
 python scripts/train_baseline.py
 python scripts/train_resnet.py
+```
 
 ---
 
