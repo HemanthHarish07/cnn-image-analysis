@@ -108,7 +108,7 @@ python scripts/train_resnet.py
 * **Data Manipulation:** NumPy
 * **Visualization:** Matplotlib
 * **Machine Learning Utilities:** Scikit-learn
-
+---
 
 ## 📂 Project Structure
 
@@ -133,3 +133,14 @@ cnn-image-analysis/
 │   ├── plots/
 │   └── gradcam_resnet/
 └── README.md
+
+```
+## 🧠 Key Learnings
+
+- Transfer learning significantly outperforms training from scratch on limited data.
+- Explainability techniques such as Grad-CAM are essential for diagnosing model behavior,
+  especially in safety-critical domains like agriculture.
+- High accuracy does not guarantee correct reasoning — qualitative inspection revealed
+  failure cases driven by background and texture bias.
+- Separating experimentation (notebooks) from execution (scripts) improves reproducibility
+  and system stability.
